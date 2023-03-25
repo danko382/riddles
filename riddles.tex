@@ -5,13 +5,40 @@
 \usepackage[russian]{babel}
 \usepackage{graphicx}
 \usepackage[unicode]{hyperref}
+\usepackage{xcolor}
 \graphicspath{{images/}}
 
 \begin{document}
+
+     % ÷вета дл€ гиперссылок
+    \definecolor{linkcolor}{HTML}{799B03} % цвет ссылок
+    \definecolor{urlcolor}{HTML}{799B03} % цвет гиперссылок
+
+    \hypersetup{pdfstartview=FitH,  linkcolor=linkcolor,urlcolor=urlcolor, colorlinks=true}
 
     \tableofcontents
     \newpage
 
     \include{simple.tex}
+
+    \newpage
+
+    \include{a_little_more_complicated_than_simple.tex}
+
+    \newpage
+
+    \include{medium.tex}
+
+    \newpage
+
+    \include{answer_for_simple_riddles.tex}
+
+    \newpage
+
+    \include{answer_for_a_little_more_complicated_than_simple.tex}
+    
+    \newpage
+
+    \include{answer_for_medium_riddles.tex}
     
 \end{document}
